@@ -584,6 +584,8 @@ a.social:focus {
 
 .projects-card .link {
     display: block;
+    transition: box-shadow 250ms cubic-bezier(.4, 0, .2, 1);
+
 }
 
 .projects-card .link:hover,
