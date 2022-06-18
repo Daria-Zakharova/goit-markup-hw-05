@@ -103,9 +103,8 @@ main {
     height: 100vh;
 
     background-color: #00000033;
-
     /* backdrop-filter: brightness(.8) grayscale(.1); */
-    transition: opacity 250ms cubic-bezier(.4, 0, .2, 1);
+    transition:  opacity 250ms cubic-bezier(.4, 0, .2, 1), visibility 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
 .modal {
@@ -120,7 +119,12 @@ main {
     border-radius: var(--border-r);
     background-color: var(--main-bg-color);
 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(.1);
 }
 
 
