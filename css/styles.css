@@ -58,6 +58,7 @@ img {
 }
 
 .no-scroll {
+    margin-right: 17px;
     overflow: hidden;
 }
 
