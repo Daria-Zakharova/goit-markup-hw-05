@@ -377,7 +377,7 @@ main {
 /* ------------Features------------ */
 
 .features {
-    padding-top: 74px;
+    padding-top: var(--section-pad);
     
 }
 .features .list {
