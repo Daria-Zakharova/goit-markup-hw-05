@@ -82,6 +82,10 @@ img {
 main {
     padding-top: 80px;
 }
+
+.no-scroll main {
+    padding-top: 0;
+}
 /* ------------Animation------------ */
 
 @keyframes appear {
@@ -136,6 +140,10 @@ main {
     width: 100%;
     background-color: var(--main-bg-color);
     border-bottom: 1px solid #ececec;
+}
+
+body.no-scroll .header {
+    position: static;
 }
 
 .header .container, .header-menu, .header .list {
